@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
 const router = useRouter();
    
 const handleLogout = () => {
-  
+  //handle logout in the future
 }
 
   return (
@@ -54,7 +54,8 @@ const handleLogout = () => {
             
             
             </button>
-
+              
+              {/* right button */}
 
             <button
             className="rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"
@@ -72,22 +73,38 @@ const handleLogout = () => {
          <>
           <div>
 
-            <Button>
-
-            Sign Up
+            <Button
+            onClick={() => {}}
+            className="
+            bg-transparent
+            text-neutral-300
+            font-medium            
+            "
+            >
+            Sign up
             </Button>    
+          </div>
 
-            
+          <div>
+
+            <Button
+            onClick={() => {}}
+            className="
+            bg-white
+            px-6
+            py-2            
+            "
+            >
+            Log in
+            </Button>    
           </div>
          
          
          </>
 
         </div>
-
-
-    </div>
-
+        </div>
+       {children}
     </div>
   )
 }
